@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    color: #525252;
+
+}
+
+html,
+body {
+    background: #e4e2e2;
+}
+
+header {
+    padding: 20px 0;
+}
+
+section.container {
+    max-width: 1280px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+main.game {
+    margin: 20px 0;
+    height: 350px;
+    border: 2px solid #525252;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+#narutinho {
+    width: 131px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+
+.animate {
+    animation: pular 0.5s linear;
+}
+
+@keyframes pular {
+
+    0%,
+    100% {
+        bottom: 28px;
+    }
+
+    45%,
+    55% {
+        bottom: 160px;
+    }
+}
+
+#kunai {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+}
+
+.animate_kunai {
+    animation: block 2s linear infinite;
+}
+
+
+@keyframes block {
+    from {
+        right: -80%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+p {
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 30px;
+    color: #525252;
+}
+
+header h2>b {
+    vertical-align: middle;
+    line-height: 1.4em;
+    color: #7855C3;
+
+}
+
+/* b {} */
+
+
+#game{
+    padding: 20px 0;
+    text-align: center;
+    display: none;
+}
+
+#game h2 {
+    font-size: 70px;
+
+}
